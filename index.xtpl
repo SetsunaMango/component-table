@@ -1,0 +1,15 @@
+<form name="{{#if(title)}}{{title}}{{/if}}"  method="get"  enctype="Application/x-www-Form-urlencoded" class="common-table">
+    <h4><legend>{{#if(title)}}{{title}}{{/if}}</legend></h4>
+        <table class="table">
+            <tr class="first">
+                {{#each(headerCloum)}}
+                <th>{{name}}</th>
+                {{/each}}
+            </tr>
+            <!-- tobe render data here -->
+        </table>
+        
+        <div class="page-box">
+            <div class="pager"></div>
+        </div>
+</form>
